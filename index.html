@@ -1,6 +1,6 @@
 <html lang="en" class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
 <head>
-	<title>Untitled</title>
+	<title>Real Estate</title>
 	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
 	<script
 		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/deps/jsonpointer.min.js"></script>
@@ -47,7 +47,7 @@
 		</div> <!--end of search-->
 	</div>
 	<div> <!-- start of header-->
-
+<header role="banner">
 		<div class="app-bar">
 			<div class="container">
 				<div class="row">
@@ -64,6 +64,7 @@
 			typeof="SiteNavigationElement">
 			<div class="pnl-strt container nvbar">
 				<h2>Topics menu</h2>
+				<nav role="navigation">
 				<div class="row">
 					<ul role="menubar" class="list-inline menu">
 						<li><a class="item" href="index-en.html" tabindex="0" aria-posinset="1" aria-setsize="7"
@@ -78,14 +79,15 @@
 								role="menuitem">Contact us</a></li>
 					</ul>
 				</div>
+			</nav>
 			</div>
 
 
 		</div> <!-- end of main navigation-->
 
 	</div> <!-- end of header-->
-
-	<main property="mainContentOfPage" class="container">
+</header>
+	<main role="main" property="mainContentOfPage" class="container">
 		<h1>Welcome</h1>
 		<p>Content A here</p>
 		<div class="row">
@@ -122,6 +124,7 @@
 
 
 	</main>
+	<footer role="contentinfo">
 	<div id="wb-info" class=" wb-navcurr-inited">
 		<div class="gc-sub-footer">
 			<div class="container d-flex align-items-center">
@@ -146,7 +149,7 @@
 			</div>
 		</div>
 	</div> <!-- end of footer-->
-
+</footer>
 	<script>
 		var defFooter = document.getElementById("def-footer");
 		defFooter.outerHTML = wet.builder.appFooter({
